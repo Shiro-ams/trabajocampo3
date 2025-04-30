@@ -153,9 +153,9 @@ public class v1 extends JFrame implements ActionListener {
 		int n1 = Integer.parseInt(txtN1.getText());
 		int n2 = Integer.parseInt(txtN2.getText());
 		int n3 = Integer.parseInt(txtN3.getText());
-		calculadora c = new calculadora(n1, n2);
+		calculadora cal = new calculadora(n1, n2);
 		TXTs.setText("");
-		TXTs.append("La suma de dos enteros es: "+c.Sumar(n1, n2, n3));
+		TXTs.append("La suma de dos enteros es: "+cal.Sumar(n1, n2, n3));
 	}catch (Exception e2) {
 		JOptionPane.showMessageDialog(this, "Ingrese Números enteros");
 		txtN1.setText("");
