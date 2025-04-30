@@ -168,9 +168,9 @@ public class v1 extends JFrame implements ActionListener {
 	    try {
 	        double num1 = Double.parseDouble(txtN1.getText());
 	        double num2 = Double.parseDouble(txtN2.getText());
-	        calculadora c = new calculadora(num1, num2);
+	        calculadora cr = new calculadora(num1, num2);
 	        TXTs.setText("");
-	        TXTs.append("La suma de dos reales es: " + c.Sumar(num1, num2));
+	        TXTs.append("La suma de dos reales es: " + cr.Sumar(num1, num2));
 	    } catch (Exception e2) {
 	        JOptionPane.showMessageDialog(this, "Ingrese números reales válidos");
 	        txtN1.setText("");
